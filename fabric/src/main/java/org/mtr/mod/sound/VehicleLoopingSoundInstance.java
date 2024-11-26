@@ -18,7 +18,7 @@ public class VehicleLoopingSoundInstance extends MovingSoundInstanceExtension {
 	}
 
 	public void setData(float volume, float pitch, BlockPos blockPos) {
-		cooldown = 20;
+		cooldown = 200;
 		setPitch(pitch == 0 ? 1 : pitch);
 		setVolume(volume);
 
@@ -39,7 +39,7 @@ public class VehicleLoopingSoundInstance extends MovingSoundInstanceExtension {
 	@Override
 	public void tick2() {
 		if (cooldown == 0) {
-//			setDone2();
+			setDone2();
 		} else {
 			cooldown--;
 		}
