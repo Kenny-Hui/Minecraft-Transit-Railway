@@ -2,6 +2,7 @@ package org.mtr.mod.sound;
 
 import org.mtr.mapping.holder.*;
 import org.mtr.mapping.mapper.MovingSoundInstanceExtension;
+import org.mtr.mod.Init;
 
 public class VehicleLoopingSoundInstance extends MovingSoundInstanceExtension {
 
@@ -38,7 +39,7 @@ public class VehicleLoopingSoundInstance extends MovingSoundInstanceExtension {
 	@Override
 	public void tick2() {
 		if (cooldown == 0) {
-			setDone2();
+//			setDone2();
 		} else {
 			cooldown--;
 		}
